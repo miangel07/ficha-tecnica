@@ -7,6 +7,7 @@
     <title>FICHA TECNICA</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+
 </head>
 <body>
     <h1> FICHA TECNICA </h1>
@@ -14,36 +15,37 @@
         <tr>
             <th colspan="2"> FICHA TECNICA </th>
             <th>
-                <img src="img/images.jpg" style="width: 100;height: 100;">
+                <img src="img/Captura de pantalla 2023-03-28 163259.png" style="width: 100;height: 100;">
             </th>
         </tr> 
         <br>
         <tr>
             <th rowspan="4">Caracteristica del producto</th>
-            <td>Nombre del producto</td><td colspan="2"><input type="text"></td>
+            <td>Nombre del producto </td><td colspan="2">
+            <input id="producto"type="text" placeholder="producto"></td>
         </tr>
         <tr>
-            <td>Linea del producto</td><td colspan="2"><input type="text"></td>
+            <td>Linea del producto</td><td colspan="2"> <input id="linea"type="text" placeholder="Linea del producto"></td>
             
         </tr>
     <tr>
-     <td>Version anterior</td><td colspan="2"><input type="text"></td>
+     <td>Version anterior</td><td colspan="2"> <input id="veranterior"type="text" placeholder="Version anterior"></td>
     </tr>
     <tr>
-        <td>Version actual</td> <td colspan="2"><input type="text"></td>
+        <td>Version actual</td> <td colspan="2"> <input id="veractual"type="text" placeholder="Version actual"></td>
     </tr>
     <tr>
-        <th> Modulo</th><td colspan="3"><input type="text"></td>
+        <th> Modulo</th><td colspan="3"> <input id="modulo"type="text" placeholder="Modulo"></td>
     </tr>
 
         <tr>
-            <th rowspan="2">Descripcion del producto</th><td>Objetivo</td><td colspan="2"><input type="text"></td>
+            <th rowspan="2">Descripcion del producto</th><td>Objetivo</td><td colspan="2"> <input id="objetivo"type="text" placeholder="Objetivo"></td>
+        <tr>
+            <td>Descripcion general</td><td colspan="2"> <input id="descrgeneral"type="text" placeholder="Descripcion general"></td>
         </tr>
         <tr>
-            <td>Descripcion general</td><td colspan="2"><input type="text"></td>
-        </tr>
-        <tr>
-            <th>Arquitectura</td><td colspan="3"><input type="text"></td>
+            <th>Arquitectura </td><td colspan="3"> <input id="arquitectura"type="text" placeholder="Arquitectura"></td>
+
         </tr>
         <br>
     </table>
@@ -59,37 +61,62 @@
            
         </tr>
         <tr>
-            <th rowspan="3"> Requerimientos del sistema (servidor)</th><td>hardware</td> <td colspan="2"><input type="text"></td>
+            <th rowspan="3"> Requerimientos del sistema (servidor)</th> <td>hardware</td> <td colspan="2"> <input id="hardware" type="text" placeholder="hardware"></td>
             <tr>
-                <td> Software</td><td colspan="2"><input type="text"></td>
+                <td> Software</td><td colspan="2"> <input id="software"type="text" placeholder="Software"></td>
             </tr>
             <tr>
-                <td>Otros</td><td colspan="2"><input type="text"></td>
+                <td>Otros</td><td colspan="2"> <input id="otros"type="text" placeholder="Otros"></td>
             </tr>
         </tr>
         <tr>
             <th rowspan="3">Requerimientos del sistema (cliente) </th>
             <tr>
-                <td>Software</td><td colspan="2"><input type="text"></td>
+                <td>Software</td><td colspan="2"> <input id="software"type="text" placeholder="Software"></td>
             </tr>
             <tr>
-                <td>Otros </td><td colspan="2"><input type="text"></td>
+                <td>Otros </td><td colspan="2"> <input id="otros"type="text" placeholder="Otros"></td>
             </tr>
         </tr>
     </table>
     <br>
     <table>
         <tr>
-            <th>version</td> <td><input type="text"></th> <td>Elaboro</td><td><input type="text">
+            <th>version</td> <td> <input id="version"type="text" placeholder="version"><td>Elaboro</td><td> <input id="Caracteristica"type="text" placeholder="Elaboro"></td>
         </tr>
         <tr>
-            <td>Naturaleza</td> <td><input type="text"></td> <td>Aprobo</td><td><input type="text">
+            <td>Naturaleza</td> <td> <input id="naturaleza"type="text" placeholder="Naturaleza"></td><td>Aprobo</td><td> <input id="aprobo"type="text" placeholder="Aprobo"></td>
         </tr>
         <tr>
-            <td>Fecha de alaboracion</td> <td><input type="text"></td> <td rowspan="2"> Valido</td><td rowspan="2"><input type="text">
+            <td>Fecha de alaboracion</td> <td> <input id="felaboracion"type="text" placeholder="Fecha de alaboracion"></td></td> <td rowspan="2"> Valido</td><td rowspan="2"> <input id="valido"type="text" placeholder="Valido"></td>
         </tr>
-        <tr><td>Fecha de validacion</td> <td><input type="text"></td>
-            
+        <tr><td>Fecha de validacion</td> <td> <input id="fevaloracion"type="text" placeholder="Fecha de validacion"></td>
     </table>
+    <button onclick="comprobar()">Enviar ficha Tecnica</button>
+   
+    <h2 class="titulos">DETALLES DEL PRODUCTO</h2>
+    <p id="respuesta1"></p>
+    <p id="respuesta2"></p>
+    <p id="respuesta3"></p>
+    <p id="respuesta4"></p>
+    <h2 class="titulos">MODULO</h2>
+    <p id="respuesta5"></p>
+    <h2 class="titulos">DESCRIPCION DEL PRODUCTO</h2>
+    <p id="respuesta6"></p>
+    <p id="respuesta7"></p>
+    <h2 class="titulos">ARQUITECTURA</h2>
+    <p id="respuesta8"></p>
+    <h2 class="titulos">ESPECIFICACIONES DETALLADAS</h2>
+    <p id="respuesta.9"></p>
+    <p id="respuesta10"></p>
+    <p id="respuesta11"></p>
+    <p id="respuesta12"></p>
+    <h2 class="titulos">VERSION</h2>
+    <p id="respuesta13"></p>
+    <p id="respuesta14"></p>
+    <p id="respuesta15"></p>
+    <p id="respuesta16"></p>
+    <p id="respuesta17"></p>
+   
 </body>
 </html>

@@ -20,4 +20,16 @@ table ,th, td, tr{
 h1 {
     text-align: center;
 }
-
+button{
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+.titulos{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: brown;
+}
+h2{
+    text-align: center;
+}
