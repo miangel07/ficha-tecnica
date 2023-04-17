@@ -1,5 +1,5 @@
 function comprobar(){
-    let producto, linea, veranterior, veractual ,modulo, objetivo,descrgeneral, arquitectura,hardware, software, otros, version,naturaleza,felaboracion,fevaloracion,aprobo,valido
+    let producto, linea, veranterior, veractual ,modulo, objetivo,descrgeneral, arquitectura,hardware,hardware2,software2, software, otros,otros2, version,naturaleza,felaboracion,fevaloracion,aprobo,valido
     producto=document.getElementById("producto").value 
     document.getElementById("respuesta1").innerHTML="<h2>nombre del producto:"+producto+"<h2>"
     console.log(producto)
@@ -50,22 +50,35 @@ document.getElementById("respuesta12").innerHTML="<h2>version: "+version+"</h2>"
 console.log(version)
 
 naturaleza=document.getElementById("naturaleza").value
-document.getElementById("respuesta13").innerHTML="<h2>naturaleza: "+naturaleza+"</h2>"
+document.getElementById("respuesta15").innerHTML="<h2>naturaleza: "+naturaleza+"</h2>"
 console.log(naturaleza)
 
 felaboracion=document.getElementById("felaboracion").value
-document.getElementById("respuesta14").innerHTML="<h2>fecha de alaboracion: "+felaboracion+"</h2>"
+document.getElementById("respuesta16").innerHTML="<h2>fecha de alaboracion: "+felaboracion+"</h2>"
 console.log(felaboracion)
 
 fevaloracion=document.getElementById("fevaloracion").value
-document.getElementById("respuesta15").innerHTML="<h2>fecha de valoracion: "+fevaloracion+"</h2>"
+document.getElementById("respuesta17").innerHTML="<h2>fecha de valoracion: "+fevaloracion+"</h2>"
 console.log(fevaloracion)
 
 aprobo=document.getElementById("aprobo").value
-document.getElementById("respuesta16").innerHTML="<h2>Aprobo: "+aprobo+"</h2>"
+document.getElementById("respuesta18").innerHTML="<h2>Aprobo: "+aprobo+"</h2>"
 console.log(aprobo)
 
 valido=document.getElementById("valido").value
-document.getElementById("respuesta17").innerHTML="<h2>Valido: "+valido+"</h2>"
+document.getElementById("respuesta19").innerHTML="<h2>Valido: "+valido+"</h2>"
 console.log(valido)
+
+hardware2=document.getElementById("hardware2").value
+document.getElementById("respuesta12").innerHTML="<h2>Hardware: "+hardware2+"</h2>"
+console.log(hardware2)
+
+software2=document.getElementById("software2").value
+document.getElementById("respuesta13").innerHTML="<h2>Software: "+software2+"</h2>"
+console.log(software2)
+
+
+otros2=document.getElementById("otros2").value
+document.getElementById("respuesta14").innerHTML="<h2>Otros: "+otros2+"</h2>"
+console.log(otros2)
 }

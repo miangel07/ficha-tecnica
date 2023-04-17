@@ -70,13 +70,15 @@
             </tr>
         </tr>
         <tr>
-            <th rowspan="3">Requerimientos del sistema (cliente) </th>
+            <th rowspan="5">Requerimientos del sistema (cliente) </th>
             <tr>
-                <td>Software</td><td colspan="2"> <input id="software"type="text" placeholder="Software"></td>
+                <td>Hardware</td><td colspan="2"> <input id="hardware2"type="text" placeholder="Hardware"></td>
             </tr>
             <tr>
-                <td>Otros </td><td colspan="2"> <input id="otros"type="text" placeholder="Otros"></td>
+                <tr><td>software</td> <td colspan="2"><input id="software2"type="text" placeholder="software"></td></tr>
             </tr>
+            <td>Otros </td><td colspan="3"> <input id="otros2"type="text" placeholder="Otros"></td>
+          
         </tr>
     </table>
     <br>
@@ -88,9 +90,9 @@
             <td>Naturaleza</td> <td> <input id="naturaleza"type="text" placeholder="Naturaleza"></td><td>Aprobo</td><td> <input id="aprobo"type="text" placeholder="Aprobo"></td>
         </tr>
         <tr>
-            <td>Fecha de alaboracion</td> <td> <input id="felaboracion"type="text" placeholder="Fecha de alaboracion"></td></td> <td rowspan="2"> Valido</td><td rowspan="2"> <input id="valido"type="text" placeholder="Valido"></td>
+            <td>Fecha de alaboracion</td> <td> <input id="felaboracion"type="date" placeholder="Fecha de alaboracion"></td></td> <td rowspan="2"> Valido</td><td rowspan="2"> <input id="valido"type="text" placeholder="Valido"></td>
         </tr>
-        <tr><td>Fecha de validacion</td> <td> <input id="fevaloracion"type="text" placeholder="Fecha de validacion"></td>
+        <tr><td>Fecha de validacion</td> <td> <input id="fevaloracion"type="date" placeholder="Fecha de validacion"></td>
     </table>
     <button onclick="comprobar()">Enviar ficha Tecnica</button>
    
@@ -110,13 +112,17 @@
     <p id="respuesta.9"></p>
     <p id="respuesta10"></p>
     <p id="respuesta11"></p>
+    <h2 class="titulos">REQUERIMIENTOS DEL SISTEMA (CLIENTE)</h2>
     <p id="respuesta12"></p>
-    <h2 class="titulos">VERSION</h2>
     <p id="respuesta13"></p>
     <p id="respuesta14"></p>
+    <h2 class="titulos">VERSION</h2>
     <p id="respuesta15"></p>
     <p id="respuesta16"></p>
     <p id="respuesta17"></p>
+    <h2 class="titulos">FIRMAS</h2>
+    <p id="respuesta18"></p>
+    <p id="respuesta19"></p>
    
 </body>
 </html>
